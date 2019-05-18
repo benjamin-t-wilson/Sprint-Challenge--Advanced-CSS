@@ -1,19 +1,21 @@
 // Navigation code here
 .navbar {
-    .flexy();
-    flex-flow: row wrap;
-    background: @nav-bg;
-    border: 2px solid @nav-border;
-    h1 {
-        font-size: 6rem;
-        width: 100%;
-        text-align: center;
-        margin: 20px 0;
+  .flexy();
+  flex-flow: row wrap;
+  background: @nav-bg;
+  border: 2px solid @nav-border;
+  h1 {
+    font-size: 6rem;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    @media @phone {
+      font-size: 4rem;
     }
-    a {
-        text-decoration: none;
-        font-size: 1.8rem;
-        color: black;
-        margin: 20px 3%;
-    }
+  }
+  a {
+    .nav-regulizer();
+    font-size: 1.8rem;
+    margin: 20px 3%;
+  }
 }
